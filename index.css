@@ -89,3 +89,99 @@ a:hover{
 .section-light{
     margin-top: 3%;
 }
+.site-footer {
+  margin-top: 60px;
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8 55%, #3b82f6);
+  padding: 46px 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.footer-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 20px 22px;
+  border-radius: 14px;
+  min-height: 175px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);
+}
+
+.footer-box h4 {
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: 700;
+ 
+}
+
+.footer-box p {
+  font-size: 16px;
+ 
+  line-height: 1.6;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-box ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  text-align: center;
+  font-size: 15px;
+  color: #e2e8f0;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-box {
+    min-height: auto;
+  }
+
+  .footer-box h4 {
+    font-size: 20px;
+  }
+
+  .footer-box p,
+  .footer-box ul li a {
+    font-size: 15px;
+  }
+}
