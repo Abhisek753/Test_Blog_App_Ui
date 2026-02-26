@@ -90,10 +90,15 @@ a:hover{
     margin-top: 3%;
 }
 
+#contact{
+    margin-top: 3%;
+}
+
 .contact-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3%;
+    margin-top: 1%;
 }
 .contact-form{
     display: flex;
@@ -122,4 +127,9 @@ a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.contact-sidebar img{
+    width: 100%;
+    height: 78%;
+    border-radius: 4%;
 }
