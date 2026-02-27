@@ -74,6 +74,24 @@ a:hover{
     grid-template-columns: repeat(3,1fr);
     gap:3%
 }
+.card-row article {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-row article:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px #818182;
+
+}
+.card-row article p{
+ 
+  text-align: left;
+}
 .card-image{
     width: 100%;
 }
@@ -179,7 +197,7 @@ a:hover{
   }
 
   .footer-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .footer-box {
