@@ -91,7 +91,7 @@ a:hover{
 }
 .site-footer {
   margin-top: 60px;
-  background: linear-gradient(135deg, #1e3a8a, #1d4ed8 55%, #3b82f6);
+   background-color: rgb(93, 83, 239);
   padding: 46px 20px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-family: Arial, sans-serif;
@@ -106,8 +106,6 @@ a:hover{
 }
 
 .footer-box {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   padding: 20px 22px;
   border-radius: 14px;
@@ -118,7 +116,6 @@ a:hover{
   margin-bottom: 14px;
   font-size: 22px;
   font-weight: 700;
- 
 }
 
 .footer-box p {
@@ -167,8 +164,14 @@ a:hover{
 }
 
 @media (max-width: 560px) {
-  .footer-container {
+   .home{
     grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 10px ;
+    width: 100vw;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer-box {
@@ -183,4 +186,9 @@ a:hover{
   .footer-box ul li a {
     font-size: 15px;
   }
+}
+
+
+@media (max-width:465px) {
+ 
 }
