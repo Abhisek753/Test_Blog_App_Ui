@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+.gallery-section{
+    width:90%;
+    max-width:1200px;
+    padding:20px;
+    margin:60px auto;
+    background-color:wheat;
+    border:#f4f4f4 solid 2px;
+    border-radius:10px;
+}
+
+.section-title{
+    text-align:center;
+    padding:20px 0;
+    font-size:32px;
+    color:#333;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap:20px;
+}
+
+/* IMAGE STYLE */
+.gallery img{
+    width:100%;
+    height:220px;              /* SAME HEIGHT ADDED */
+    object-fit:cover;          /* Proper crop */
+    border-radius:12px;
+    cursor:pointer;
+
+    opacity:0;
+    transform:translateY(20px);
+    animation: fadeUp 0.6s ease forwards;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation Delay */
+.gallery img:nth-child(1){animation-delay:0.1s;}
+.gallery img:nth-child(2){animation-delay:0.2s;}
+.gallery img:nth-child(3){animation-delay:0.3s;}
+.gallery img:nth-child(4){animation-delay:0.4s;}
+.gallery img:nth-child(5){animation-delay:0.5s;}
+.gallery img:nth-child(6){animation-delay:0.6s;}
+.gallery img:nth-child(7){animation-delay:0.7s;}
+.gallery img:nth-child(8){animation-delay:0.8s;}
+.gallery img:nth-child(9){animation-delay:0.9s;}
+.gallery img:nth-child(10){animation-delay:1s;}
+.gallery img:nth-child(11){animation-delay:1.1s;}
+.gallery img:nth-child(12){animation-delay:1.2s;}
+
+/* Hover Effect Improved */
+.gallery img:hover{
+    transform: scale(1.07) translateY(-6px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+}
+
+/* Animation */
+@keyframes fadeUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Laptop */
+@media (max-width:1024px){
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width:768px){
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
