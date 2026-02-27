@@ -1,145 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog-App</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <header class="navbar">
-        <div class="nav-left">
+      <div class="nav-left">
         <h2 class="logo">TechWave Blog</h2>
         <p>Frontend Tips, tools and tutorials</p>
-        </div>
-        <nav class="nav-right">
-          <a href="#home" class="nav-link active">Home</a>
-            <a href="#featured" class="nav-link active">Featured</a>
-              <a href="#tutorial" class="nav-link active">Tutorials</a>
-               <a href="#gallery" class="nav-link active">Gallery</a>
-                <a href="#contact" class="nav-link active">Contact</a>
-        </nav>
+      </div>
+      <nav class="nav-right">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#featured" class="nav-link active">Featured</a>
+        <a href="#tutorial" class="nav-link active">Tutorials</a>
+        <a href="#gallery" class="nav-link active">Gallery</a>
+        <a href="#contact" class="nav-link active">Contact</a>
+      </nav>
     </header>
     <main class="page">
-        <!-- Home section  creation-->
-         <section id="home" class="home">
-            <div class="home-text">
-               <h2>Modern Frontend Made Easy</h2>
-               <p>Welcome to <strong>TechWave</strong> a simple blog app focused on HTML,CSS,JS and the tools you use everyday. Learn how real interface aare built, one small concept at a time.</p>
-               <p>
-                Scroll down for short article step by step tutorials and a quicq look at the tools we use to ship modern website.
-               </p>
+      <!-- Home section  creation-->
+      <section id="home" class="home">
+        <div class="home-text">
+          <h2>Modern Frontend Made Easy</h2>
+          <p>
+            Welcome to <strong>TechWave</strong> a simple blog app focused on
+            HTML,CSS,JS and the tools you use everyday. Learn how real interface
+            aare built, one small concept at a time.
+          </p>
+          <p>
+            Scroll down for short article step by step tutorials and a quicq
+            look at the tools we use to ship modern website.
+          </p>
+        </div>
+        <div class="home-image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/060/401/157/non_2x/person-coding-at-computer-desk-in-flat-art-style-vector.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- Feature section -->
+      <section id="featured" class="section">
+        <h2 class="section-title">Featured Articles</h2>
+        <div class="card-row">
+          <article class="card">
+            <img
+              class="card-image"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150351/HTML-Tutorial-copy.webp"
+              alt="Html tutorial"
+            />
+            <div>
+              <h3>Build Your First Web Page</h3>
+              <p class="card-meta">HTML Beginner Guide</p>
+              <p>Understanding the structure of a real home page using html.</p>
             </div>
-            <div  class="home-image">
-              <img src="https://static.vecteezy.com/system/resources/previews/060/401/157/non_2x/person-coding-at-computer-desk-in-flat-art-style-vector.jpg" alt="">
+          </article>
+          <article class="card">
+            <img
+              class="card-image"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150349/CSS-Tutorial-copy.webp"
+              alt="Html tutorial"
+            />
+            <div>
+              <h3>Build Your First Web Page</h3>
+              <p class="card-meta">HTML Beginner Guide</p>
+              <p>Understanding the structure of a real home page using html.</p>
             </div>
-
-
-         </section>
-          <!-- Feature section -->
-         <section id="featured" class="section">
-            <h2 class="section-title">Featured Articles</h2>
-            <div class="card-row">
-                <article class="card">
-                   <img class="card-image" src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150351/HTML-Tutorial-copy.webp" alt="Html tutorial">
-                   <div>
-                    <h3>Build Your First Web Page</h3>
-                    <p class="card-meta">HTML Beginner Guide</p>
-                    <p>Understanding the structure of a real home page using html.</p>
-                   </div>
-                </article>
-                  <article class="card">
-                   <img class="card-image" src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150349/CSS-Tutorial-copy.webp" alt="Html tutorial">
-                   <div>
-                    <h3>Build Your First Web Page</h3>
-                    <p class="card-meta">HTML Beginner Guide</p>
-                    <p>Understanding the structure of a real home page using html.</p>
-                   </div>
-                </article>
-                  <article class="card">
-                   <img class="card-image" src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150350/JavaScript-Tutorial-copy.webp" alt="Html tutorial">
-                   <div>
-                    <h3>Build Your First Web Page</h3>
-                    <p class="card-meta">HTML Beginner Guide</p>
-                    <p>Understanding the structure of a real home page using html.</p>
-                   </div>
-                </article>
+          </article>
+          <article class="card">
+            <img
+              class="card-image"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20240701150350/JavaScript-Tutorial-copy.webp"
+              alt="Html tutorial"
+            />
+            <div>
+              <h3>Build Your First Web Page</h3>
+              <p class="card-meta">HTML Beginner Guide</p>
+              <p>Understanding the structure of a real home page using html.</p>
             </div>
-         </section>
+          </article>
+        </div>
+      </section>
 
-         <!-- Tutorial Section -->
-       <section id="tutorial" class="section section-light">
+      <!-- Tutorial Section -->
+      <section id="tutorial" class="section section-light">
         <h2 class="section-title">Latest Tutorials</h2>
-       <div class="card-row">
-         <article>
-              <h3>Create a blog Home layout</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore voluptatem eveniet consectetur nostrum blanditiis?</p>
-         </article>
+        <div class="card-row">
           <article>
-              <h3>Create a blog Home layout</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore voluptatem eveniet consectetur nostrum blanditiis?</p>
-         </article>
+            <h3>HTML Basics for Beginners</h3>
+            <p>Learn the fundamentals of HTML and understand how web pages are structured.</p>
+            <p>
+             This tutorial covers elements, tags, attributes, and how to create a basic web page step by step.
+            </p>
+          </article>
           <article>
-              <h3>Create a blog Home layout</h3>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita inventore voluptatem eveniet consectetur nostrum blanditiis?</p>
-         </article>
-       </div>
-       
-       </section>
-       
+            <h3>CSS Styling Made Easy</h3>
+            <p>Discover how to style your website using simple and clean CSS.</p>
+            <p>
+             You’ll learn about colors, fonts, spacing, layouts, and how to make your site look attractive.
+            </p>
+          </article>
+          <article>
+            <h3>JavaScript for Interactive Websites</h3>
+            <p>Add interactivity to your website using basic JavaScript concepts.</p>
+            <p>
+             This tutorial explains variables, functions, events, and simple DOM manipulation with examples.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
     <footer class="site-footer" id="contact">
-  <div class="footer-container">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h4 style="">About</h4>
+          <p>
+            Learn web development with practical HTML, CSS, and JavaScript
+            tutorials. Beginner-friendly and focused on real projects.
+          </p>
+        </div>
 
-    <div class="footer-box">
-      <h4 style="">About</h4>
-      <p>
-        Learn web development with practical HTML, CSS, and JavaScript tutorials.
-        Beginner-friendly and focused on real projects.
+        <div class="footer-box">
+          <h4 style="">Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tutorial">Tutorials</a></li>
+            <li><a href="#featured">Featured Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4 style="">Resources</h4>
+          <ul>
+            <li><a href="#featured">HTML Basics</a></li>
+            <li><a href="#featured">CSS Layouts</a></li>
+            <li><a href="#featured">JavaScript Logic</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h4 style="">Contact</h4>
+          <p>Email: swapnil@gmail.com</p>
+          <p>Location: India</p>
+
+          <p>
+            Follow us:
+            <a href="#">Instagram</a> | <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a>
+          </p>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 20px">
+        © 2026 Skillians Team • Built for learning web development conflicct
+        free and with fun.
       </p>
-    </div>
-
-    <div class="footer-box">
-      <h4 style="">Quick Links</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#tutorial">Tutorials</a></li>
-        <li><a href="#featured">Featured Articles</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-box">
-      <h4 style="">Resources</h4>
-      <ul>
-        <li><a href="#featured">HTML Basics</a></li>
-        <li><a href="#featured">CSS Layouts</a></li>
-        <li><a href="#featured">JavaScript Logic</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-box">
-      <h4 style="">Contact</h4>
-      <p>Email: swapnil@gmail.com</p>
-      <p>Location: India</p>
-
-      <p>
-        Follow us:
-           <a href="#">Instagram</a> |
-        <a href="#">Twitter</a> |
-        <a href="#">LinkedIn</a> |
-        <a href="#">GitHub</a>
-      </p>
-    </div>
-
-  </div>
-
-  <p style="text-align:center; margin-top:20px;">
-    © 2026 Skillians Team • Built for learning web development conflicct free and with fun.
-  </p>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
