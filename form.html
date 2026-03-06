@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+  .box{
+    margin:10px;
+    padding:8px;
+    display:block;
+  }
+
+  .btn{
+    padding:10px 20px;
+    background: black;
+    color:white;
+    border:none;
+  }
+
+  .btn:hover{
+    cursor:pointer;
+  }
+</style>
 </head>
 <body>
     <input class="box" id="name" placeholder="Put your name">
 <input class="box" id="email" placeholder="Put your email">
 <input class="box" id="age" placeholder="Put your age">
 
-<button class="box" onclick="updateData()">Click</button>
+<button class="box btn" onclick="updateData()">Click</button>
 <script>
 function updateData(){
 
